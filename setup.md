@@ -12,4 +12,5 @@ tictactoe/
   main.py         # Entry point. Creates Game and UI, then starts the loop.
   requirements.txt
 
-  git remote add origin https://github.com/nswgsafety/Connect4
+I HATE IAN
+
