@@ -2,14 +2,14 @@
 
 PROJECT STRUCTURE
 
-tictactoe/
+connect4/
   src/
-    cell.py       # A single square on the board. Knows its value and index.
-    board.py      # Holds all 9 cells. Draws the grid. Checks if full.
-    player.py     # Stores a player's name, symbol, score, and color.
-    game.py       # Runs the game. Handles turns, win detection, state.
-    ui.py         # All terminal output and input. The only file using rich.
-  main.py         # Entry point. Creates Game and UI, then starts the loop.
+    cell.py     # One slot on the board.
+    board.py    # 6x7 grid of cells. Drops pieces. Checks if columns are full.
+    player.py   # Stores name, symbol, color, and score.
+    game.py     # Manages turns, win detection across 4 directions, and state.
+    ai.py       # Minimax AI with alpha-beta pruning.
+    menu.py     # Main menu screen (mode selection).
+    ui.py       # Pygame game screen, animations, and result overlay.
+  main.py       # Entry point. Runs menu -> game loop.
   requirements.txt
-
-  git remote add origin https://github.com/nswgsafety/Connect4
