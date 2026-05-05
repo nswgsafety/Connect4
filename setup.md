@@ -4,12 +4,16 @@ PROJECT STRUCTURE
 
 connect4/
   src/
-    cell.py     # One slot on the board.
-    board.py    # 6x7 grid of cells. Drops pieces. Checks if columns are full.
-    player.py   # Stores name, symbol, color, and score.
-    game.py     # Manages turns, win detection across 4 directions, and state.
-    ai.py       # Minimax AI with alpha-beta pruning.
-    menu.py     # Main menu screen (mode selection).
-    ui.py       # Pygame game screen, animations, and result overlay.
-  main.py       # Entry point. Runs menu -> game loop.
-  requirements.txt
+    cell.py         - unchanged
+    board.py        - unchanged
+    player.py       - unchanged
+    game.py         - unchanged
+    ai.py           - UPDATED: multiple difficulty levels
+    theme.py        - NEW: all colors, draw_chip, shared drawing tools
+    wallet.py       - NEW: tracks money across gambling and blackjack
+    ui.py           - UPDATED: uses theme, better visuals
+    menu.py         - REWRITTEN: casino look, 5 modes
+    story_mode.py   - NEW: 7 progressive AI opponents
+    gambling.py     - NEW: bet money on Connect 4
+    blackjack.py    - NEW: full blackjack game with card rendering
+  main.py           - UPDATED: routes all 5 modes
